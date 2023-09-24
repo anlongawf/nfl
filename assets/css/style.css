@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+/* style.css */
+
+/* Thiết lập kiểu cho header */
+#header {
+  background-color: #e50914; /* Màu nền cho tiêu đề */
+  color: #fff; /* Màu chữ cho tiêu đề */
+  text-align: center;
+  padding: 20px;
+}
+
+#main ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#main ul li {
+  padding-left: 50px;
+  display: inline-block;
+  float: left;
+  margin-top: 20px;
+}
+#main li:hover a {
+  color: red;
+  filter: brightness(100%);
+  font-size: 30px;
+}
+#main ul li a {
+  filter: brightness(90%);
+  font-size: 25px;
+  color: #fff; /* Màu chữ cho các mục danh sách */
+  text-decoration: none;
+}
+
+/* CSS - style.css */
+/* CSS - style.css */
+/* CSS - style.css */
+
+#main {
+  position: relative;
+  height: 100vh; /* Chiều cao 100% của viewport */
+  width: 100%; /* Chiều rộng 100% của viewport */
+  background: url('/assets/img/halloween-movies-1565027176.jpg');
+  background-size: cover; /* Tự động phóng to hoặc thu nhỏ hình ảnh để lấp đầy phần tử */
+  background-position: center; /* Căn giữa hình ảnh nền */
+  background-attachment: fixed; /* Giữ hình ảnh cố định trong khung nhìn (viewport) */
+  position: relative; /* Để tạo lớp màu mờ lên hình ảnh */
+}
+
+#main::before {
+  content: ''; /* Tạo một phần tử trống để làm lớp màu mờ */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65); /* Màu mờ với độ mờ 0.5 */
+}
+
+#main h4 {
+  position: absolute;
+  color: white;
+  filter: brightness(150%);
+  font-size: 65px; /* Tăng kích thước chữ */
+  font-weight: bold; /* Chữ đậm */
+  top: 27%;
+  right: 0;
+  display: inline-block; /* Để văn bản nằm trên hình ảnh */
+  font-weight: bold; /* Chữ đậm */
+  text-align: center;
+}
+#main h2 {
+  position: absolute;
+  filter: brightness(92%);
+  color: white;
+  text-align: center;
+  top: 60%;
+  font-size: 24px;
+  right: 460px;
+}
+#main h3 {
+  position: absolute;
+  filter: brightness(92%);
+  color: white;
+  text-align: center;
+  top: 65%;
+  font-size: 24px;
+  right: 550px;
+}
+#main h3 a {
+  color: #e50914;
+}
+/* Thiết lập kiểu cho nội dung chính */
+#profile {
+  position: relative;
+  height: 600px;
+  background-color: #000;
+  border: 4px solid #ccc;
+}
+
+#profile img {
+  position: absolute;
+  top: 10%;
+}
+#profile h4 {
+  position: absolute;
+  top: 50px;
+  font-size: 28px;
+  margin-left: 45%;
+  color: white;
+}
+#profile ul li {
+  position: relative;
+  top: 100px;
+  margin-left: 47%;
+  padding-top: 30px;
+}
+#profile ul li a {
+  color: white;
+  font-size: 20px;
+}
+#profile i {
+  font-size: 32px;
+  color: rgb(17, 198, 218);
+}
+
+#product {
+  position: relative;
+  border: 4px solid #ccc;
+  background-color: #000;
+}
+#produc p {
+  color: white;
+}
+
+#product h4 {
+  position: absolute;
+  top: 5%;
+  margin-left: 70%;
+  font-size: 32px;
+  color: white;
+}
+
+#product img {
+  width: 700px;
+  height: 270px;
+}
+#product ul .li {
+  height: 100px;
+}
+#product ul.li a {
+  display: flex; /* Sử dụng display: flex để căn chỉnh các phần tử con */
+  align-items: center; /* Đặt chúng cách nhau theo chiều dọc */
+}
+
+#product ul.li a span.label {
+  position: relative;
+  margin-top: 10px; /* Khoảng cách giữa các nhãn và nội dung */
+  margin-left: 60%;
+  top: 90px;
+  color: white;
+}
+
+#product ul.li a span.value {
+  color: red; /* Đặt màu chữ là đỏ */
+  position: absolute;
+  margin-top: 192px;
+  margin-left: 1010px;
+}
+#product ul.li a span.value1 {
+  color: red; /* Đặt màu chữ là đỏ */
+  position: absolute;
+  margin-top: 190px;
+  margin-left: 992px;
+}
+#product ul.li a span.value2 {
+  color: red; /* Đặt màu chữ là đỏ */
+  position: absolute;
+  margin-top: 192px;
+  margin-left: 972px;
+}
+
+#product ul.li a {
+  color: #e50914;
+}
+#product ul a {
+  font-size: 20px;
+}
+#product ul a p {
+  position: absolute;
+  top: 0%;
+  margin-left: 80%;
+  margin-top: 20px;
+}
+#product ul h2 {
+  position: absolute;
+  top: 20%;
+  margin-left: 76%;
+  font-size: 19px;
+}
+#product .li li {
+  text-align: right;
+  margin-right: 10px; /* Khoảng cách giữa các mục */
+  display: inline-block;
+}
+
+#product .li i {
+  margin-right: 5px; /* Khoảng cách giữa biểu tượng và văn bản */
+}
+
+#product ul.li {
+  color: white;
+}
+#product p {
+  position: absolute;
+  margin-top: 18%;
+  margin-left: 72%;
+  color: rgb(249, 249, 249); /* Đặt màu chữ là đỏ */
+  z-index: 1000;
+}
+
+#product h3 {
+  position: absolute;
+  top: 63%; /* Điều chỉnh top để đặt nút theo vị trí mong muốn */
+  left: 70%; /* Điều chỉnh left để đặt nút theo vị trí mong muốn */
+  height: 25px;
+  width: 100px;
+  font-family: 'Poppins', Sans-serif;
+  text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+  fill: #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  background-image: linear-gradient(270deg, #790202de 0%, #cb0042 100%);
+  padding: 10px 35px 10px 35px;
+  border-radius: 50px;
+}
+
+#footer {
+  height: 200px;
+  background-color: #000;
+  border: 4px solid #ccc;
+  display: flex;
+}
+#footer ul {
+  position: relative;
+  right: 100px;
+  margin-left: 30px;
+}
+
+#footer a {
+  font-size: 20px;
+  color: white;
+  top: 80%;
+  position: relative;
+  left: 400px;
+}
+#footer .li:hover a {
+  color: #910909;
+  transform: scale(1.1);
+}
+#footer h2 {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+#footer h3 {
+  margin-top: 20px;
+  font-size: 14px;
+}
+#footer h4 {
+  font-size: 24px;
+}
+#footer .profile {
+  opacity: 0.5;
+  margin-top: 10px;
+  position: relative;
+  left: 45%;
+  color: white;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#baohanh {
+  position: relative;
+  height: 300px;
+  color: white;
+  background-color: #000;
+  border: 4px solid #ccc;
+}
+#baohanh img {
+  position: absolute;
+  height: 300px;
+  width: 392px;
+}
+#baohanh .info {
+  top: 15%;
+  left: 45%;
+  position: absolute;
+  line-height: 27px;
+  justify-content: center;
+}
+/*
+
+
+
+*/
